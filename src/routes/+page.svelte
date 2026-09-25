@@ -85,3 +85,15 @@
 		</div>
 	</div>
 </section>
+
+<section class="bg-black px-6 py-16 font-sans md:px-12">
+	<div class="mx-auto max-w-6xl">
+		<h2 class="mb-8 text-2xl font-bold tracking-tight text-amber-400">Our Projects</h2>
+	</div>
+</section>
+
+<section class="bg-black px-6 py-16 font-sans md:px-12" id="about">
+	<div class="mx-auto max-w-6xl">
+		<h2 class="mb-8 text-2xl font-bold tracking-tight text-amber-400">About us</h2>
+	</div>
+</section>
