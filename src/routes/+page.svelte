@@ -8,6 +8,11 @@
 		{ name: 'Ocean', role: 'Developer', github: 'https://github.com/BlueOceanVale' },
 		{ name: 'Mishra', role: 'Developer', github: 'https://github.com/ayushmishra34er' }
 	];
+
+	const projects = [
+		{ name: 'Project-Luminous', description: '' },
+		{ name: 'Organization site', description: '' }
+	];
 </script>
 
 <!-- Navigation Bar -->
@@ -89,11 +94,35 @@
 <section class="bg-black px-6 py-16 font-sans md:px-12">
 	<div class="mx-auto max-w-6xl">
 		<h2 class="mb-8 text-2xl font-bold tracking-tight text-amber-400">Our Projects</h2>
+		<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+			{#each projects as project}
+				<div
+					class="group flex flex-col items-center gap-2 rounded-xl border border-neutral-800 bg-neutral-900/50 p-6 text-center transition-all duration-300 hover:border-amber-400/60 hover:bg-neutral-900/80 hover:shadow-lg hover:shadow-amber-400/10"
+				>
+					<!-- Placeholder Avatar -->
+					<!--<div
+						class="flex h-14 w-14 items-center justify-center rounded-full border border-amber-400/20 bg-neutral-800 font-bold text-amber-400 transition-colors group-hover:border-amber-400"
+					>
+						{project.name[0]}
+					</div>-->
+					<h3 class="text-lg font-bold text-white transition-colors group-hover:text-amber-300">
+						{project.name}
+					</h3>
+					<span
+						class="rounded-full bg-amber-400/10 px-2.5 py-0.5 text-xs font-medium text-amber-400/80"
+						>{project.description}</span
+					>
+				</div>
+			{/each}
+		</div>
 	</div>
 </section>
 
 <section class="bg-black px-6 py-16 font-sans md:px-12" id="about">
 	<div class="mx-auto max-w-6xl">
 		<h2 class="mb-8 text-2xl font-bold tracking-tight text-amber-400">About us</h2>
+		<div>
+			<p class="text-white">We are..</p>
+		</div>
 	</div>
 </section>
