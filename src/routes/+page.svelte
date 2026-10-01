@@ -9,10 +9,7 @@
 		{ name: 'Mishra', role: 'Developer', github: 'https://github.com/ayushmishra34er' }
 	];
 
-	const projects = [
-		{ name: 'Project-Luminous', description: '' },
-		{ name: 'Organization site', description: '' }
-	];
+	const projects = [{ name: 'Project-Luminous', description: '' }];
 </script>
 
 <!-- Navigation Bar -->
@@ -122,7 +119,7 @@
 	<div class="mx-auto max-w-6xl">
 		<h2 class="mb-8 text-2xl font-bold tracking-tight text-amber-400">About us</h2>
 		<div>
-			<p class="text-white">We are..</p>
+			<p class="text-white">We are a team of three...</p>
 		</div>
 	</div>
 </section>
