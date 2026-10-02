@@ -9,7 +9,9 @@
 		{ name: 'Mishra', role: 'Developer', github: 'https://github.com/ayushmishra34er' }
 	];
 
-	const projects = [{ name: 'Project-Luminous', description: '' }];
+	const projects = [
+		{ name: 'Project-Luminous', description: '', url: 'https://github.com/LuminousApple' }
+	];
 </script>
 
 <!-- Navigation Bar -->
@@ -47,7 +49,7 @@
 	>
 		Luminous Apple
 	</h1>
-	<p class="max-w-md text-sm text-neutral-400 md:text-base">
+	<p class="max-w-md text-sm text-[20px] text-neutral-400 italic md:text-base">
 		Building open-source software and tools with precision.
 	</p>
 	<a
@@ -82,6 +84,9 @@
 						class="rounded-full bg-amber-400/10 px-2.5 py-0.5 text-xs font-medium text-amber-400/80"
 						>{member.role}</span
 					>
+					<a href={member.github} target="_blank" class="pt-5 text-white no-underline">
+						Github ↗&#xFE0E;
+					</a>
 				</div>
 			{/each}
 		</div>
@@ -96,19 +101,21 @@
 				<div
 					class="group flex flex-col items-center gap-2 rounded-xl border border-neutral-800 bg-neutral-900/50 p-6 text-center transition-all duration-300 hover:border-amber-400/60 hover:bg-neutral-900/80 hover:shadow-lg hover:shadow-amber-400/10"
 				>
-					<!-- Placeholder Avatar -->
-					<!--<div
+					<a href={project.url}>
+						<!-- Placeholder Avatar -->
+						<!--<div
 						class="flex h-14 w-14 items-center justify-center rounded-full border border-amber-400/20 bg-neutral-800 font-bold text-amber-400 transition-colors group-hover:border-amber-400"
 					>
 						{project.name[0]}
 					</div>-->
-					<h3 class="text-lg font-bold text-white transition-colors group-hover:text-amber-300">
-						{project.name}
-					</h3>
-					<span
-						class="rounded-full bg-amber-400/10 px-2.5 py-0.5 text-xs font-medium text-amber-400/80"
-						>{project.description}</span
-					>
+						<h3 class="text-lg font-bold text-white transition-colors group-hover:text-amber-300">
+							{project.name}
+						</h3>
+						<span
+							class="rounded-full bg-amber-400/10 px-2.5 py-0.5 text-xs font-medium text-amber-400/80"
+							>{project.description}</span
+						>
+					</a>
 				</div>
 			{/each}
 		</div>
@@ -119,7 +126,17 @@
 	<div class="mx-auto max-w-6xl">
 		<h2 class="mb-8 text-2xl font-bold tracking-tight text-amber-400">About us</h2>
 		<div>
-			<p class="text-white">We are a team of three...</p>
+			<p class="text-white">
+				Luminous Apple is a small team of three developers building software, experimenting with new
+				ideas, and learning by shipping. We focus on open-source projects and tools that solve
+				problems we find interesting.
+			</p>
 		</div>
 	</div>
+</section>
+
+<hr class="w-full border-t border-amber-400 shadow-[0_0_15px_rgba(251,191,36,0.3)]" />
+
+<section class="min-h-50 w-full bg-black">
+	<h3 class="px-6 py-10 text-[18px] font-semibold text-amber-400">LuminousApple</h3>
 </section>
